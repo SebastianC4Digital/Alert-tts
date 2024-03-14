@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/alert.dir/main.cpp.o"
-  "CMakeFiles/alert.dir/main.cpp.o.d"
-  "alert"
   "alert.pdb"
+  "alert"
 )
 
 # Per-language clean rules from dependency scanning.

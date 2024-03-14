@@ -1,1 +1,1 @@
-/usr/bin/g++ -g -rdynamic CMakeFiles/alert.dir/main.cpp.o -o alert  -lespeak 
+/usr/bin/g++   -g   CMakeFiles/alert.dir/main.cpp.o  -o alert -lespeak 

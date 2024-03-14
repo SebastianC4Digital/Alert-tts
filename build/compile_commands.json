@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/sebastian/Documents/Alert-TTS/build",
-  "command": "/usr/bin/g++   -g -o CMakeFiles/alert.dir/main.cpp.o -c /home/sebastian/Documents/Alert-TTS/main.cpp",
+  "command": "/usr/bin/g++     -g   -std=c++11 -o CMakeFiles/alert.dir/main.cpp.o -c /home/sebastian/Documents/Alert-TTS/main.cpp",
   "file": "/home/sebastian/Documents/Alert-TTS/main.cpp"
 }
 ]

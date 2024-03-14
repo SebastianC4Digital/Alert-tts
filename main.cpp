@@ -4,7 +4,7 @@
 #include <cstdlib>
 #include <cstring>
 #include <unistd.h>
-#include "../../../../usr/include/espeak/speak_lib.h"
+#include <espeak/speak_lib.h>
 
 /*
 https://espeak.sourceforge.net/voices.html
@@ -63,16 +63,14 @@ int main()
    espeak_Initialize(output, bufLength, NULL, options);
    // Set voice properties
    memset(&voice, 0, sizeof(voice)); // Initialize the voice struct
-   voice.languages = "es";           // Language code for Spanish
-   voice.gender = 2;                 // Female voice
+   voice.languages = "es-mx";        // Language code for Spanish
+   voice.gender = 1;                 // Female voice
    voice.variant = 2;
-   voice.age = 2;
+   voice.age = 1;
    espeak_SetVoiceByProperties(&voice);
 
-   // Text to be synthesized
-   const char *text = "Atención, el trabajador José Rodríguez, haga uso de su casco por favor.";
+   const char *text = "Atención, trabajador José Rodríguez, haga uzo de su casco de seguridad.";
 
-   // Synthesize text
    espeak_Synth(text, strlen(text) + 1, 0, position_type, 0, espeakCHARS_AUTO, 0, NULL);
    espeak_Synchronize();
    return 0;
